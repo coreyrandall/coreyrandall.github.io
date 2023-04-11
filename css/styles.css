@@ -78,9 +78,15 @@ main {
     font-family: "Roboto Slab", serif;
 }
 
+.welcome {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    margin: 0 auto;
+}
+
 main table {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 2% auto;
 }
 
 main table caption {
@@ -119,35 +125,42 @@ table td a img {
     padding-bottom: 13px;
 }
 
+/*Style rules for Available Services page*/
 .services {
-    width: 95%;
+    width: 100%;
     padding: 1%;
     margin: 1% auto;
-    list-style: none;
     color: #FFFFFF;
     background-color: #000000;
+    text-align: center;
 }
 
-main ul {
+.services-pic {
+    width: 200px;
+    height: 150px;
+}
+
+.services ul {
     list-style-type: none;
-    float: left;
 }
 
+/*Style rules for About Us page*/
 .about {
     background-color: #fff;
     margin: 5%;
     padding: 2%;
 }
 
+/*Style rules for Contact page*/
 .contact {
     margin: 1% auto;
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 
 .map {
     border: 2px solid #000;
-    width: 60%;
+    width: 100%;
     display: block;
     text-align: center;
     margin-left: auto;
@@ -155,6 +168,7 @@ main ul {
     margin-bottom: 1%;
     padding-top: 15px;
     margin-top: 2%;
+    background-color: #fff;
 }
 
 .map h2 {
@@ -162,9 +176,8 @@ main ul {
 }
 
 /* Style rules for form elements */
-    
 form {
-    width: 90%;
+    width: 100%;
     margin: 2% auto;
     background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,0,0,1.00) 100%);
     background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,0,0,1.00) 100%);
@@ -211,6 +224,7 @@ textarea {
 
 /* Style rules for footer content */
 footer {
+    clear: both;
     margin-top: 600px;
 }
 
@@ -230,7 +244,7 @@ footer p a {
 @media screen and (min-width: 768px),
 print {
 
-    /* Tablet Viewport: Style rule for header */
+    /* Style rule for header */
     header {
     width: 100%;
     position: static;
@@ -245,7 +259,7 @@ print {
         text-align: center;
     }
 
-    /* Tablet Viewport: Style rules for nav area */
+    /* Style rules for nav area */
     nav {
         padding: 1%;
         background-color: black;
@@ -283,18 +297,42 @@ print {
         display: block;
     }
 
-    .map {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    padding-top: 15px;
-    margin-top: 2%;
+    /*Style rules for Available Services page*/
+.services {
+    width: 100%;
+    padding: 1%;
+    margin: 1% auto;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: left;
+}
+    .services-pic {
+        width: 300px;
+        height: 200px;
+        margin: 1%;
+    }
+    
+    .services ul {
+        list-style-type: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    .services ul li {
+        margin: 1%;
+    }
+
+    .contact {
+        margin: 1% auto;
+        width: 60%;
+        text-align: center;
     }
 
 }
 
-/* Media Query for Desktop Viewport */
-@media screen and (min-width: 1024px),
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1440px),
 print {
 
     nav li a:hover {
@@ -302,12 +340,38 @@ print {
         background-color: #fff;
     }
 
-    /* Desktop Viewport: Style Rules for main content */
+    .welcome {
+        width: 900px;
+        background-color: black;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    /* Style Rules for main content */
     .testimonials {
         background-color: #fff;
         text-align: center;
         margin: 10px auto;
-        width: 80%;
+        width: 900px;
+    }
+
+    /*Style rules for Available Services page*/
+    .services-pic {
+        width: 300px;
+        height: 200px;
+        margin: 1%;
+    }
+    
+    .services ul {
+        padding-top: 20px;
+        float: left;
+        list-style-type: none;
+        width: 50%;
+        background-color: black;
+    }
+
+    .services ul li {
+        margin: 1%;
     }
 
     form {
@@ -321,6 +385,15 @@ print {
         padding-right: 1%;
         padding-bottom: 1%;
         padding-left: 1%;
+    }
+
+    .map {
+        width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    padding-top: 15px;
+    margin-top: 2%;
     }
 
 }
